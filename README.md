@@ -72,10 +72,10 @@ There’s a big need for a simple, accessible platform that makes exchanging pre
 ---
 
 ##  Run Locally
--git clone https://github.com/VTG56/ecofinds-marketplace.git
--cd ecofinds-marketplace
--npm install
--npm run dev
+- git clone https://github.com/VTG56/ecofinds-marketplace.git
+- cd ecofinds-marketplace
+- npm install
+- npm run dev
 
 ---
 Future Enhancements
