@@ -1,14 +1,8 @@
-import AppRouter from "./router";
-import { AuthProvider } from "./context/AuthContext";
+import React from "react";
+import "./styles/tailwind.css";
 import "./styles/globals.css";
+import AppRouter from "./router";
 
-function App() {
-  return (
-    <AuthProvider>
-      <AppRouter />
-    </AuthProvider>
-  );
+export default function App() {
+  return <AppRouter />;
 }
-
-
-export default App;

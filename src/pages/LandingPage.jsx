@@ -1,55 +1,83 @@
-import { useNavigate } from "react-router-dom";
+import React from 'react';
+import Button from '../components/Button';
+import "../styles/pages/landing.css";
 
-export default function LandingPage() {
-  const navigate = useNavigate();
-
+const LandingPage = () => {
   return (
-    <div className="min-h-screen bg-green-50 flex flex-col justify-between">
+    <div className="landing">
+      {/* Header */}
+      <header className="header">
+        <div className="header__content">
+          <div className="header__logo">
+            <img src="src/assets/logo.png" alt="EcoFinds" className="logo" />
+            <h1 className="logo__title">EcoFinds</h1>
+          </div>
+        </div>
+      </header>
+
       {/* Hero Section */}
-      <section className="flex flex-col items-center justify-center text-center mt-20 px-4">
-        <h1 className="text-5xl font-extrabold text-green-800 mb-4">
-          Welcome to EcoFinds 🌿
-        </h1>
-        <p className="text-lg text-green-700 max-w-xl mb-8">
-          Discover and buy eco-friendly products from local sellers.  
-          Save the planet while shopping smart!
-        </p>
-        <div className="flex gap-4">
-          <button
-            onClick={() => navigate("/signup")}
-            className="px-6 py-3 bg-green-600 text-white font-semibold rounded-lg shadow hover:bg-green-700 transition"
-          >
-            Sign Up
-          </button>
-          <button
-            onClick={() => navigate("/login")}
-            className="px-6 py-3 bg-white border-2 border-green-600 text-green-600 font-semibold rounded-lg shadow hover:bg-green-100 transition"
-          >
-            Login
-          </button>
+      <section className="hero">
+        <div className="hero__content">
+          <h1 className="hero__title">
+            Buy & Sell Smarter. 
+            <span className="hero__title--highlight"> Sustainably.</span>
+          </h1>
+          <p className="hero__subtitle">
+            
+            Discover quality pre-owned goods while making sustainable choices. 
+            Fast listings, smart discovery, and seamless transactions - all in one 
+            clean, modern marketplace that puts the planet first.
+          </p>
+          <div className="cta">
+            <Button variant="primary" size="lg" to="/home">Explore Marketplace</Button>
+            <Button variant="ghost" size="lg" to="/login">Login</Button>
+            <Button variant="ghost" size="lg" to="/signup">Sign Up</Button>
+          </div>
         </div>
       </section>
 
-      {/* Features / Info Section */}
-      <section className="flex flex-col items-center text-center mb-20 px-4">
-        <h2 className="text-3xl font-bold text-green-800 mb-6">
-          Why EcoFinds?
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl">
-          <div className="p-4 bg-white rounded-xl shadow">
-            <h3 className="font-semibold text-green-700 mb-2">Eco-Friendly</h3>
-            <p>All products are sustainable and good for the environment.</p>
+      {/* Features Grid */}
+      <section className="features">
+        <div className="features__container">
+          <div className="feature">
+            <div className="feature__icon">⚡</div>
+            <h3 className="feature__title">Fast Listings</h3>
+            <p className="feature__description">
+              List your items in seconds with our streamlined process. 
+              Smart photo recognition and auto-categorization make selling effortless.
+            </p>
           </div>
-          <div className="p-4 bg-white rounded-xl shadow">
-            <h3 className="font-semibold text-green-700 mb-2">Local Sellers</h3>
-            <p>Support small businesses and local artisans in your community.</p>
+          
+          <div className="feature">
+            <div className="feature__icon">🔍</div>
+            <h3 className="feature__title">Smart Discovery</h3>
+            <p className="feature__description">
+              Find exactly what you need with AI-powered recommendations and 
+              advanced filters. Discover hidden gems in your local area.
+            </p>
           </div>
-          <div className="p-4 bg-white rounded-xl shadow">
-            <h3 className="font-semibold text-green-700 mb-2">Easy & Safe</h3>
-            <p>Secure checkout, smooth shopping experience, all in one place.</p>
+          
+          <div className="feature">
+            <div className="feature__icon">🛒</div>
+            <h3 className="feature__title">Cart & History</h3>
+            <p className="feature__description">
+              Keep track of your purchases and favorites. Seamless checkout 
+              process with secure payments and order history at your fingertips.
+            </p>
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="footer">
+        <div className="footer__content">
+          <p className="footer__copyright">
+            © 2024 EcoFinds. Building a sustainable future, one transaction at a time.
+          </p>
+        </div>
+      </footer>
     </div>
   );
-}
+};
+
+export default LandingPage;
