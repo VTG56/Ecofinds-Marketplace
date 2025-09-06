@@ -76,8 +76,9 @@ git clone https://github.com/VTG56/ecofinds-marketplace.git
 cd ecofinds-marketplace
 npm install
 npm run dev
+
+---
 Future Enhancements
-(In case you feel like going extra)
 
 Favorites / Wishlist
 
