@@ -1,5 +1,10 @@
 # EcoFinds – Sustainable Second-Hand Marketplace
-
+# Team CODEX
+# Problem Statement 1  : Ecofinds-Sustainable
+## Team Members : 
+-  **Vishwaradhya S Aiholli**
+-  **Hemsagar B C**
+-  **Srihari S Bharadwaj**
 ##  Overview
 **EcoFinds** is a sustainable second-hand marketplace built during a 8-hour hackathon.  
 It empowers users to register, create profiles, list pre-owned products, browse with search and filters, manage a shopping cart, and view past purchases — all built with React, Firebase, and TailwindCSS to promote conscious consumption and circular economy.
