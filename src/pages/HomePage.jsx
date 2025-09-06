@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { onSnapshot, collection } from 'firebase/firestore';
-import { db, auth } from '../../src/services/firebase'; // Make sure to import auth
+import { db, auth } from '../../src/services/firebase';
 import Navbar from '../components/Navbar';
 import ProductCard from '../components/ProductCard';
 import SearchBar from '../components/SearchBar';

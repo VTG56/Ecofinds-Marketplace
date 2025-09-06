@@ -216,7 +216,29 @@ export const createOrder = async (userId, cartItems, totalAmount) => {
     throw new Error("Failed to create order");
   }
 };
-
+export const getPurchaseHistory = (userId, callback) => {
+  try {
+    const unsubscribe = onSnapshot(
+      collection(db, "history", userId, "orders"),
+      (snapshot) => {
+        const orders = snapshot.docs.map(doc => ({
+          id: doc.id,
+          ...doc.data()
+        }));
+        callback(orders);
+      },
+      (error) => {
+        console.error("Error getting purchase history:", error);
+        throw new Error("Failed to load purchase history");
+      }
+    );
+    
+    return unsubscribe;
+  } catch (error) {
+    console.error("Error setting up purchase history listener:", error);
+    throw new Error("Failed to setup purchase history listener");
+  }
+};
 // Get products by category
 export const getProductsByCategory = (category, callback) => {
   try {

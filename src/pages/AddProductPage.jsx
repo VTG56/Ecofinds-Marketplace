@@ -4,7 +4,7 @@ import { addProduct } from '../services/productService';
 import Navbar from '../components/Navbar';
 // Assuming you have a Button component, otherwise use a standard button
 // import Button from '../components/Button'; 
-
+import "../styles/components/addComponent.css"
 const AddProductPage = () => {
   const [formData, setFormData] = useState({
     title: '',
