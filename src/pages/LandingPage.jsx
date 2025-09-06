@@ -9,7 +9,7 @@ const LandingPage = () => {
       <header className="header">
         <div className="header__content">
           <div className="header__logo">
-            <img src="src/assets/logo.png" alt="EcoFinds" className="logo" />
+            
             <h1 className="logo__title">EcoFinds</h1>
           </div>
         </div>

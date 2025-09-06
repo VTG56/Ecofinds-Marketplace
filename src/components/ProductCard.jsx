@@ -31,7 +31,7 @@ const ProductCard = ({ id, title, price, category, image, onAddToCart }) => {
       <div className="product-content">
         <div className="product-category">{category}</div>
         <h3 className="product-title">{title}</h3>
-        <div className="product-price">${price}</div>
+        <div className="product-price">Rs {price}</div>
         
         <button 
           className="add-to-cart-btn"
