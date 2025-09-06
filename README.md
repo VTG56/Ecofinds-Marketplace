@@ -1,6 +1,6 @@
 # EcoFinds – Sustainable Second-Hand Marketplace
 # Team CODEX
-# Problem Statement 1  : Ecofinds-Sustainable
+## Problem Statement 1  : Ecofinds-Sustainable
 ## Team Members : 
 -  **Vishwaradhya S Aiholli**
 -  **Hemsagar B C**
