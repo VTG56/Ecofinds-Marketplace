@@ -1,7 +1,7 @@
 # EcoFinds – Sustainable Second-Hand Marketplace
 
 ##  Overview
-**EcoFinds** is a sustainable second-hand marketplace built during a 6-hour hackathon.  
+**EcoFinds** is a sustainable second-hand marketplace built during a 8-hour hackathon.  
 It empowers users to register, create profiles, list pre-owned products, browse with search and filters, manage a shopping cart, and view past purchases — all built with React, Firebase, and TailwindCSS to promote conscious consumption and circular economy.
 
 ---
@@ -47,21 +47,7 @@ There’s a big need for a simple, accessible platform that makes exchanging pre
 - **Auth & Database:** Firebase (Firestore + Authentication)  
 - **Hosting:** Firebase Hosting  
 
----
 
-##  Project Structure
-ecofinds-marketplace/
-├── src/
-│ ├── components/ # UI components
-│ ├── pages/ # Pages (Home, Login, Profile, etc.)
-│ ├── hooks/ # Custom React hooks
-│ ├── styles/ # Tailwind config + CSS modules
-│ └── firebase.js # Firebase setup
-├── public/ # Static files
-└── README.md # Project intro & PRD
-
-yaml
-Copy code
 
 ---
 
@@ -86,7 +72,6 @@ Copy code
 ---
 
 ##  Run Locally
-```bash
 git clone https://github.com/VTG56/ecofinds-marketplace.git
 cd ecofinds-marketplace
 npm install
