@@ -1,13 +1,5 @@
 # EcoFinds – Sustainable Second-Hand Marketplace  
 
-## Team CODEX 🌱 : [Live Demo](https://ecofindsmarketplace.web.app)
-
-## 👥 Team Members  
-- **Vishwaradhya S Aiholli**  
-- **Hemsagar B C**  
-- **Srihari S Bharadwaj**  
-
----
 
 ## 🌍 Overview  
 **EcoFinds** is a sustainable second-hand marketplace built during an 8-hour hackathon.  
